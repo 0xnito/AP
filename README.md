@@ -59,14 +59,17 @@ Estas métricas permiten evaluar el error de predicción en términos absolutos 
 
 La predicción de series temporales ha sido ampliamente estudiada en la literatura. A continuación se resumen algunos modelos comúnmente utilizados para problemas similares, junto con las métricas empleadas y resultados típicos reportados.
 
-| Modelo | Tipo | Métrica | Resultado reportado |
-|------|------|---------|---------------------|
-| ARIMA | Estadístico | RMSE | Dependiente de la serie |
-| Prophet | Estadístico | MAE | Buen desempeño con estacionalidad |
-| LSTM | Deep Learning | MAE | Mejora frente a modelos base |
-| GRU | Deep Learning | RMSE | Resultados competitivos |
+| Modelo        | Tipo            | Métrica | Resultado reportado |
+|---------------|-----------------|---------|---------------------|
+| Naive         | Baseline        | MAE     | Referencia mínima |
+| Media móvil   | Estadístico     | MAE     | Mejora frente al naive |
+| ARIMA         | Estadístico     | RMSE    | Dependiente de la serie |
+| Prophet       | Estadístico     | MAE     | Buen desempeño con tendencia |
+| LSTM          | Deep Learning   | MAE     | Mejora frente a modelos base |
+| GRU           | Deep Learning   | RMSE    | Resultados competitivos |
 
-Los resultados mostrados corresponden a valores reportados en trabajos previos de la literatura y no a experimentos propios realizados en esta fase del proyecto.
+Los resultados mostrados corresponden a valores típicos reportados en trabajos previos de la literatura y no a experimentos propios realizados en esta fase del proyecto.
+
 
 ---
 
