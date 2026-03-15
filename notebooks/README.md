@@ -1,19 +1,3 @@
-AP/
-├── data/
-│   └── raw/                       # CSV original (no versionado)
-├── models/                        # Definiciones de modelos (.py)
-│   ├── lstm_model.py
-│   ├── gru_model.py
-│   ├── lstm_gru_model.py          # BiLSTM + GRU
-│   
-├── notebooks/
-│   ├── 01_eda.ipynb               # Análisis exploratorio
-│   ├── 02_lstm_weekly_tweets.ipynb
-│   ├── 03_gru_weekly_tweets.ipynb
-│   ├── 04_bilstm_gru_weekly_tweets.ipynb
-│   
-├── saved_models/                  # Modelos entrenados (.keras)
-└── README.md
 
 ## Modelos deep learning
 Métricas en escala original (tweets/semana). Split cronológico: 70% train / 15% val / 15% test. Ventana de entrada: 8 semanas.
